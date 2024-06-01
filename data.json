@@ -1,0 +1,106 @@
+
+[
+    
+
+    {
+        "category": "Jela od Mesa",
+        "items": [
+            {
+                "image": "slike/5b28ed53e88ec2.81146009_pil_raznici-mali.jpg",
+                "price": "11 KM",
+                "description": "Mali pileći fileti paket"
+            },
+            {
+                "image": "slike/5b28ee07e76696.77077353_piletina-mala.jpg",
+                "price": "11.5 KM",
+                "description": "Mali ražnjići + mala pljeskavica"
+            },
+            {
+                "image": "slike/5b28e9e88cbac6.61320642_chikenburger.jpg",
+                "price": "10 KM",
+                "description": "Mrkvina pljeskavica velika"
+            }
+        ]
+    },
+
+    {
+        "category": "Piletina",
+        "items": [
+            {
+                "image": "slike/5b28ed53e88ec2.81146009_pil_raznici-mali.jpg",
+                "price": "11 KM",
+                "description": "Mali pileći fileti paket"
+            },
+            {
+                "image": "slike/5b28ee07e76696.77077353_piletina-mala.jpg",
+                "price": "11.5 KM",
+                "description": "Mali ražnjići + mala pljeskavica"
+            },
+            {
+                "image": "slike/5b28e9e88cbac6.61320642_chikenburger.jpg",
+                "price": "10 KM",
+                "description": "Mrkvina pljeskavica velika"
+            }
+        ]
+    },
+    {
+        "category": "Kombinacija",
+        "items": [
+            {
+                "image": "slike/5b28f3dd9bb392.72574478_komb-cevsnicl.jpg",
+                "price": "11 KM",
+                "description": "Mali pileći fileti paket"
+            },
+            {
+                "image": "slike/5b28f40d6c3939.20261050_komb-cevsudj.jpg",
+                "price": "11.5 KM",
+                "description": "Mali ražnjići + mala pljeskavica"
+            },
+            {
+                "image": "slike/5b28f4ac3adb19.92734581_komb-cevpljs.jpg",
+                "price": "10 KM",
+                "description": "Mrkvina pljeskavica velika"
+            }
+        ]
+    },
+    {
+        "category": "Sendvici",
+        "items": [
+            {
+                "image": "slike/5b28f5b902dc11.11332827_sendvic_tel-kuku.jpg",
+                "price": "11 KM",
+                "description": "Mali pileći fileti paket"
+            },
+            {
+                "image": "slike/5b28e9e88cbac6.61320642_chikenburger.jpg",
+                "price": "11.5 KM",
+                "description": "Mali ražnjići + mala pljeskavica"
+            },
+            {
+                "image": "slike/6046472f86b5a2.99055800_extra pileći sendvič.png",
+                "price": "10 KM",
+                "description": "Mrkvina pljeskavica velika"
+            }
+        ]
+    },
+    {
+        "category": "Mrkva paketi",
+        "items": [
+            {
+                "image": "slike/kombo.jpg",
+                "price": "11 KM",
+                "description": "Mali pileći fileti paket"
+            },
+            {
+                "image": "slike/5b28f6ea9767e6.38762162_extramn8.jpg",
+                "price": "11.5 KM",
+                "description": "Mali ražnjići + mala pljeskavica"
+            },
+            {
+                "image": "slike/5b28f7688f05c4.80717640_extramn5.jpg",
+                "price": "10 KM",
+                "description": "Mrkvina pljeskavica velika"
+            }
+        ]
+    }
+]

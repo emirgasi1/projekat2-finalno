@@ -1,0 +1,682 @@
+
+/* HTML5 display-role reset for older browsers */
+
+
+
+html {  font-family: sans-serif;  color: rgba(0,0,0,0.87); }
+body { margin:0; }
+
+nav { height:100px; line-height:50px; background:#923d16;  left:0; width:100%; }
+nav ul li { display:block; float:left; width:30%; text-align:center; }
+nav ul li a { color:#fff;  text-decoration:none; }
+
+
+
+
+/* dark theme*/
+
+
+#themeSwitcher {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  margin-bottom: 10px;
+}
+body.dark-theme nav   { background-color:#923d16; text-decoration:none; }
+body.dark-theme #themeSwitcher {
+  background-color: #333;
+  color: #f0f0f0;
+}
+.dark-theme body{
+  background-color: #1f1f1f ;
+}
+.dark-theme .mrkvafooter{
+  background-color: #1f1f1f ;
+}
+
+
+.dark-theme .sektor1{
+  background-image: linear-gradient(#923d16,#444444);
+}
+
+.dark-theme .sektor2,
+.dark-theme .sektor3,
+.dark-theme .sektor4,
+.dark-theme .sektor21{
+  background-color: #444444 !important;
+  color: white;
+}
+
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+
+
+/*Navbar*/
+#logo1 {
+  width: 200px;
+  display: block;
+  margin: 0 auto 20px auto; /* Center the logo and add space below it */
+}
+
+/*Izbor jela*/
+.sektor1 {
+  background-image: linear-gradient(#893a15, #F26523);
+}
+
+.tipjela-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tipjela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.tipjela a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.tipjela a:hover {
+  color: rgb(62, 60, 60) !important; /* Change to the desired hover color */
+  transition: color 0.3s;
+}
+
+.tipjela p {
+  text-align: center;
+  color: white;
+}
+
+.tipjela img {
+  width: 70px;
+}
+
+/* dugmici */
+a {
+  text-decoration: none !important;
+  color: white;
+}
+
+a:hover {
+  color: rgb(62, 60, 60) !important; /* Change to the desired hover color */
+  transition: color 0.3s;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* izbori hrane */
+.sektor2{
+  background-color: #E9E9E9;
+}
+.izbor {
+  font-family: "Sedan SC", serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.hranakanta{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slike2 {
+  position: relative;
+  display: inline-block; /* Ensure it's not a block element */
+}
+.slike2 img{
+  width: 350px;
+  height: 280px;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+.narudzbatekst1{
+  font-family: "Sedan SC", serif;
+  
+  background-color: #F26523;
+  text-align: center;
+  font-size: 20px;
+  width: 320px;
+}
+
+.narudzbatekst2{
+  font-family: "Sedan SC", serif;
+
+  background-color: #F26523;
+  text-align: center;
+  font-size: 20px;
+  width: 320px;
+}
+.narudzbatekst3{
+  font-family: "Sedan SC", serif;
+ 
+  background-color: #F26523;
+  text-align: center;
+  font-size: 20px;
+  width: 320px;
+}
+
+.narudzbatekst11 {
+  font-family: "Sedan SC", serif;
+  position: absolute;
+  top: 70px ;
+  background-color: #28160C; 
+  color: white;
+  padding-right: 5px;
+  padding-top: 10px; 
+  border-radius: 5px; 
+}
+.narudzbatekst12 {
+  font-family: "Sedan SC", serif;
+  position: absolute;
+  top: 70px ;
+  background-color: #28160C; 
+  color: white; 
+  padding-right: 5px; 
+  padding-top: 10px; 
+  border-radius: 5px; 
+}
+.narudzbatekst13 {
+  font-family: "Sedan SC", serif;
+  position: absolute;
+  top: 70px ;
+  background-color: #28160C; 
+  color: white; 
+  padding-right: 5px; 
+  padding-top: 10px; 
+  border-radius: 5px; 
+}
+.cijena1 {
+  background-color: #00A751;
+  width: 320px;
+  text-align: center;
+}
+
+/* sektor3 */
+
+.sektor3{
+  background-color: #28160C;
+}
+.izbor h2{
+  color: white;
+}
+
+/* Narucivanje */
+
+.narucititekst{
+  font-family: "Sedan SC", serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nuncic img {
+  height: 200px;
+  width: 600px;
+  overflow: hidden; 
+  filter: brightness(50%); 
+  filter: brightness(50%) ; 
+}
+
+.nuncicime{
+  font-family: "Sedan SC", serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.naruciime1 {
+  font-size: 15px;
+}
+
+
+/* forma*/
+
+#formfirstname, #formlastname, #enteremail, #entersubject {
+  font-family: "Sedan SC", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 500px!important;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit button {
+  padding: 15px 70px;
+  border: 1px solid white;
+  color: #0C3B5F;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit button:hover {
+  background-color: #0C3B5F;
+  color: white;
+}
+
+.jedan2 {
+  display: flex;
+  justify-content: center;
+}
+
+#password-strength-container {
+  width: 20%;
+  background: #ddd;
+  height: 5px;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#password-strength {
+  height: 5px;
+  background-color: #e1e1e1;
+  width: 100px;
+}
+
+.strength-weak {
+  background-color: red !important;
+  width: 150px;
+}
+
+.strength-medium {
+  background-color: orange !important;
+  width: 200px;
+}
+
+.strength-strong {
+  background-color: green !important;
+  width: 250px;
+}
+
+#entermessage {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* footer */
+
+.mrkvafooter{
+  background-color: #160c07;
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+}
+
+.mrkvaviber img{
+  height: 100px;
+  width: 100px;
+}
+
+.footerikone img{
+  height: 30px;
+  width: 30px;
+  color: white;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.footerikone{
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+.mrkvafooterslika img{
+  width: 150px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.mrkvameni ul{
+  display: flex;
+}
+
+.mrkvameni ul li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+.mrkvameni ul li a{
+  color: white !important;
+}
+
+.mrkvacopyright{
+  color:white;
+}
+
+.slike21 {
+  position: relative;
+  display: inline-block; 
+}
+.slike21 img{
+  height: 270px;
+  width: 350px;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.success-message {
+  display: none;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.review{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lobster", sans-serif;
+
+}
+.sektor21{
+  background-color: #E9E9E9;
+  padding-top: 20px;
+}
+.weather h2{
+  font-size: 50px;
+  text-align: center;
+}
+#weatherData {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+}
+
+
+
+
+
+
+/*INTERACTIVE GALLERY*/
+
+
+
+.slike2 img{
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* FAQ ACCORDION MENU*/
+
+/* Style for the accordion menu */
+.accordion {
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.accordion-item {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-item-header {
+  background-color: #e9e9e9;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-item-content {
+  padding: 10px;
+  display: none;
+}
+
+/* Style for the active accordion item */
+.active {
+  display: block;
+}
+
+/* responsive*/
+
+@media (max-width: 1224px) {
+  .navbar-nav {
+      display: none;
+      font-size: 20px ;
+  }
+  .navbar-nav.show {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+  .navbar-toggler {
+      display: block;
+  }
+  .tipjela-container img{
+    width: 50px;
+  }
+  .hranaka {
+    width:250px;
+  }
+  
+}
+@media (max-width: 1074px) {
+  .tipjela-container img {
+      width: 50px;
+  }
+  .hranaka img {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Flexbox to align items in a column and center them when the viewport width is 1070px or less */
+  .hranakanta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .hranakanta .slike2 {
+      width: 100%; /* Make each item take the full width */
+      max-width: 300px; /* Add a max-width to keep items manageable */
+      margin-bottom: 20px; /* Add space between items */
+      text-align: center; /* Center text inside items */
+  }
+}
+@media (max-width: 925px) {
+  .tipjela-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tipjela {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 10px;
+}
+.tipjela img {
+    width: 100px;
+    height: auto;
+}
+#menuIcon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 0;
+}
+@media (max-width: 900px) {
+    #menuIcon {
+        display: block;
+    }
+    .tipjela-container {
+      display: none; /* Initially hidden */
+      flex-direction: column; /* To display items in a new row */
+      width: 100%;
+      background-color: #fff; /* Background color to distinguish */
+      padding: 10px; /* Padding for better appearance */
+      color: black !important;
+  }
+  .navbar-nav .nav-item {
+      margin: 5px 0; /* Margin between items for better appearance */
+  }
+  
+  
+}
+}
+@media (max-width: 425px) {
+ #formacijela{
+  width: 300px;
+ }
+  #weatherData{
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .sektor2 img{
+width: 290px;
+  }
+  .narudzbatekst1{
+    width: 265px;
+  }
+  .narudzbatekst2{
+    width: 265px;
+  }
+  .narudzbatekst3{
+    width: 265px;
+  }
+  .cijena1{
+    width: 265px;
+  }
+  .slike2 img{
+    width: 290px;
+  }
+  #formacijela{
+   width: 200px;
+  }
+   #weatherData{
+     font-size: 10px;
+   }
+   .mrkvafooter {
+    font-size: 7px;
+   }
+  
+ }
+
+ @media (max-width: 320px) {
+  #formacijela{
+   width: 100px;
+  }
+   #weatherData{
+     font-size: 10px;
+   }
+ }
+ 
