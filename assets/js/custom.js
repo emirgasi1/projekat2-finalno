@@ -4,82 +4,114 @@ $(document).ready(function() {
 
   var app = $.spapp({pageNotFound : 'error_404'}); // initialize
 
-  // Define routes
-  app.route({
-    view: 'view_1',
-    onCreate: function() {
-      /* mera strength */
-      document.getElementById("subject").addEventListener("input", function () {
-        const strengthIndicator = document.getElementById("password-strength");
-        const password = this.value;
-        let strength = 0;
-      
-        if (password.match(/[a-z]/)) {
-          strength += 1;
+// Define routes
+app.route({
+  view: 'view_1',
+  onCreate: function() {
+    /* mera strength */
+    document.getElementById("subject").addEventListener("input", function () {
+      const strengthIndicator = document.getElementById("password-strength");
+      const password = this.value;
+      let strength = 0;
+
+      if (password.match(/[a-z]/)) {
+        strength += 1;
+      }
+      if (password.match(/[A-Z]/)) {
+        strength += 1;
+      }
+      if (password.match(/[0-9]/)) {
+        strength += 1;
+      }
+      if (password.match(/[$@#!%*?&]/)) {
+        strength += 1;
+      }
+
+      strengthIndicator.style.width = strength * 25 + "%";
+
+      if (strength === 0) {
+        strengthIndicator.className = "";
+        strengthIndicator.style.width = "0%";
+      } else if (strength === 1) {
+        strengthIndicator.className = "strength-weak";
+      } else if (strength === 2) {
+        strengthIndicator.className = "strength-medium";
+      } else if (strength >= 3) {
+        strengthIndicator.className = "strength-strong";
+      }
+    });
+
+    $("#formacijela").validate({
+      rules: {
+        prvoime: "required",
+        lastnejm: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        subject: "required",
+        password: {
+          required: true,
+          minlength: 8
         }
-        if (password.match(/[A-Z]/)) {
-          strength += 1;
+      },
+      messages: {
+        prvoime: "Please enter your first name",
+        lastnejm: "Please enter your last name",
+        email: {
+          required: "Please enter your email address",
+          email: "Please enter a valid email address"
+        },
+        subject: "Please enter a subject",
+        password: {
+          required: "Please enter a password",
+          minlength: "Your password must be at least 8 characters long"
         }
-        if (password.match(/[0-9]/)) {
-          strength += 1;
+      },
+      submitHandler: function(form) {
+        // Simulating form submission
+        toastr.success('Form submitted successfully!');
+        form.reset(); // Reset the form
+      },
+      invalidHandler: function(event, validator) {
+        // Show an error toastr message
+        toastr.error('Form contains errors. Please fix them.');
+      }
+    });
+
+    // Fetch weather data
+    const apiKey = '5331a1a4e6e3f511efb75ef5f86dc1d3';
+    const city = 'London'; 
+
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
         }
-        if (password.match(/[$@#!%*?&]/)) {
-          strength += 1;
-        }
-      
-        strengthIndicator.style.width = strength * 25 + "%";
-      
-        if (strength === 0) {
-          strengthIndicator.className = "";
-          strengthIndicator.style.width = "0%";
-        } else if (strength === 1) {
-          strengthIndicator.className = "strength-weak";
-        } else if (strength === 2) {
-          strengthIndicator.className = "strength-medium";
-        } else if (strength >= 3) {
-          strengthIndicator.className = "strength-strong";
-        }
+        return response.json();
+      })
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info');
+        weatherInfo.innerHTML = `
+          <p>Temperature: ${data.main.temp} K</p>
+          <p>Description: ${data.weather[0].description}</p>
+          <p>Humidity: ${data.main.humidity} %</p>
+        `;
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error('There was a problem with the fetch operation:', error);
       });
 
-      $("#formacijela").validate({
-        rules: {
-          prvoime: "required",
-          lastnejm: "required",
-          email: {
-            required: true,
-            email: true
-          },
-          subject: "required",
-          password: {
-            required: true,
-            minlength: 8
-          }
-        },
-        messages: {
-          prvoime: "Please enter your first name",
-          lastnejm: "Please enter your last name",
-          email: {
-            required: "Please enter your email address",
-            email: "Please enter a valid email address"
-          },
-          subject: "Please enter a subject",
-          password: {
-            required: "Please enter a password",
-            minlength: "Your password must be at least 8 characters long"
-          }
-        },
-        submitHandler: function(form) {
-          // Simulating form submission
-          toastr.success('Form submitted successfully!');
-          form.reset(); // Reset the form
-        },
-        invalidHandler: function(event, validator) {
-          // Show an error toastr message
-          toastr.error('Form contains errors. Please fix them.');
-        }
+    // jQuery document ready
+    $(document).ready(function() {
+      $('#togglebutton').click(function() {
+        $(this).toggleClass('active');
       });
-    }
-  });
+    });
+  }
+});
+
   app.route({
     view: 'view_2',
     load: 'view_2.html',

@@ -155,7 +155,18 @@ a:link, a:visited, a:active {
   font-size: 20px;
   width: 320px;
 }
-
+#registerButton{
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 .narudzbatekst2{
   font-family: "Sedan SC", serif;
 
@@ -180,7 +191,6 @@ a:link, a:visited, a:active {
   background-color: #28160C; 
   color: white;
   padding-right: 5px;
-  padding-top: 10px; 
   border-radius: 5px; 
 }
 .narudzbatekst12 {
@@ -437,9 +447,9 @@ label {
   font-size: 50px;
   text-align: center;
 }
-#weatherData {
+#weather-info {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
   font-size: 2em;
 }
 
